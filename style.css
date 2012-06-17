@@ -1,0 +1,98 @@
+body {
+	background-color: #fafafa;
+	color: #333;
+	font-family: Georgia, "Times New Roman", Times;
+	font-size: 100%;
+	margin: 0;
+	padding: 0;
+	text-align: left;
+}
+
+#main {
+	width: 30em;
+	margin: 0 auto 5em;
+}
+
+h1, h2, h3 {
+	padding: 0.2em 0;
+	margin: 1.5em 0 1em;
+}
+
+h1 {
+	font-size: 200%;
+}
+
+h2 {
+	border-bottom: 1px solid #ccc;
+	font-size: 150%;
+}
+
+h3 {
+	font-size: 120%;
+}
+
+p {
+	line-height: 1.5em;
+}
+
+p a {
+	color: #333;
+	text-decoration: none;
+	border-bottom: 1px #333 dotted;
+}
+
+var {
+	background-color: #ddd;
+	font-style: normal;
+	padding: 0.1em 0.2em;
+	border-radius: 0.5em;
+	-moz-border-radius: 0.5em;
+	-webkit-border-radius: 0.5em;
+	-khtml-border-radius: 0.5em;
+}
+
+
+.right {
+	float: right;
+}
+
+.left {
+	float: left;
+}
+
+pre {
+	background-color: #eee;
+	line-height: 1.8em;
+	margin: 1em 0 0;
+	padding: 1em;
+}
+
+dl.options {
+	margin: 0 0 3em;
+}
+
+dl.options dt {
+	border-top: 1px solid #eee;
+	margin: 1em 0 0;
+	padding: 1em 0 0;
+}
+
+dl.options dt span {
+	background-color: #ddd;
+	padding: 0.1em 0.3em;
+	border-radius: 0.2em;
+	-moz-border-radius: 0.2em;
+	-webkit-border-radius: 0.2em;
+	-khtml-border-radius: 0.2em;
+}
+
+dl.options dd {
+	margin: -1.2em 0 0 7em;
+}
+
+
+.expander,
+.reducer,
+.reduced {
+	display: none;
+}
