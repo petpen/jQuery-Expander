@@ -14,12 +14,14 @@ body {
 }
 
 h1, h2, h3 {
+	clear: both;
 	padding: 0.2em 0;
 	margin: 1.5em 0 1em;
 }
 
 h1 {
 	font-size: 200%;
+	text-align: center;
 }
 
 h2 {
@@ -90,6 +92,37 @@ dl.options dd {
 	margin: -1.2em 0 0 7em;
 }
 
+
+.github-links {
+	height: 3em;
+	list-style: none;
+	margin: 0 auto;
+	width: 29em;
+}
+
+.github-links li {
+	text-align: center;
+	float: left;
+	width: 8em;
+	margin: 0 0.5em;
+}
+
+.github-links a {
+	border: 1px #333 solid;
+	border-radius: 0.5em;
+	-moz-border-radius: 0.5em;
+	-webkit-border-radius: 0.5em;
+	-khtml-border-radius: 0.5em;
+	color: #333;
+	display: block;
+	font-size: 90%;
+	text-decoration: none;
+	padding: 0.5em 0;
+}
+
+.github-links a:hover {
+	background-color: #ccc;
+}
 
 .expander,
 .reducer,
