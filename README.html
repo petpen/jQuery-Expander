@@ -1,0 +1,192 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta http-equiv="Content-Language" content="en" />
+
+		<link rel="stylesheet" href="reset.css" type="text/css" />
+		<link rel="stylesheet" href="style.css" type="text/css" />
+		<link rel="stylesheet" href="demo/box.css" type="text/css" />
+
+		<title>jQuery Expander</title>
+	</head>
+	<body>
+		<a href="https://github.com/petpen/jQuery-Expander">
+			<img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_gray_6d6d6d.png" alt="Fork me on GitHub">
+		</a>
+		<div id="main">
+			<h1>jQuery Expander</h1>
+
+			<h2>Description</h2>
+			<p>
+				jQuery Expander is a simple JavaScript content toggler that can be used with <a href="http://jquery.com" title="jQuery JavaScript Library">jQuery</a>.
+				It is fully customizable.
+				You can change all selectors and can put your CSS-selectors everywhere inside an element with the class <var>expandable</var>.
+				This class selector can be changed too.
+			</p>
+			<p>
+				The reduced content will be hidden by CSS.
+				Therefore visitors without JS will not miss any relevant content.
+				It will just look like expected.
+			</p>
+
+			<h2>Motivation</h2>
+			<p>
+				If you like <a href="http://en.wikipedia.org/wiki/Don%27t_repeat_yourself" title="Don't repeat yourself - Wikipedia">DRY</a> code like I do you should use it.
+				Do you know the following always repeated task?
+			</p>
+			<p>
+				You have an element on your website that should only show a snippet of the whole content.
+				So you write a JS function that will be called if a user clicks the "show more" link.
+				This call will toggle the short content with the longer version.
+				And I know you&hellip; you will integrate the call of this function inside the a-Tag itself ;)<br/>
+				Then you have a similiar feature on another page which toggles other types of contents.
+			</p>
+			<p>
+				As a result you might have two different functions for the same task.
+				But not if you use this plugin in combination with jQuery.
+				This plugin gives you the freedom of using only a predefined CSS-selector structure.
+				This structure can be customized to your needs!
+			</p>
+
+			<h2>Demos</h2>
+			<div class="box expandable">
+				<div class="box-title">
+					<h3>Expander Inside</h3>
+				</div>
+				<div class="box-content">
+					<div class="reduced">
+						<p>
+							<img class="left" src="demo/img/leaf_small.jpg" width="100" height="74" alt="leaf"/>
+							Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+							Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur <a href="#" class="expander" title="Show me the full story!">more&hellip;</a>
+						</p>
+					</div>
+					<div class="expanded">
+						<p>
+							<img class="left" src="demo/img/leaf.jpg" width="150" height="111" alt="leaf"/>
+							Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+							Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+							Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
+							Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.
+							In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.
+							Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi.
+						</p>
+						<p>
+							Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante.
+							Etiam sit amet orci eget eros faucibus tincidunt. Duis leo.
+							Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna.
+							Sed consequat, leo eget bibendum sodales, augue velit cursus nunc, quis gravida magna mi a libero.
+							Fusce vulputate eleifend sapien. Vestibulum purus quam, scelerisque ut, mollis sed, nonummy id, metus.
+							Nullam accumsan lorem in dui. Cras ultricies mi eu turpis hendrerit fringilla.
+							Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;
+							In ac dui quis mi consectetuer lacinia. Nam pretium turpis et arcu.
+							Duis arcu tortor, suscipit eget, imperdiet nec, imperdiet iaculis, ipsum.
+							Sed aliquam ultrices mauris. Integer ante arcu, accumsan a, consectetuer eget, posuere ut, mauris.
+							Praesent adipiscing. Phasellus ullamcorper ipsum rutrum nunc. Nunc nonummy metus.
+							Vestibulum volutpat pretium libero. Cras id dui. <a href="#" class="reducer" title="I've read it">less</a>
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="box expandable">
+				<div class="box-title">
+					<h3>Expander Outside</h3>
+					<ul class="box-actions">
+						<li class="expander">
+							<a href="#" title="Show me the full story!">Full Story &gt;</a>
+						</li>
+						<li class="reducer">
+							<a href="#" title="I've read it">&lt; Intro</a>
+						</li>
+					</ul>
+				</div>
+				<div class="box-content">
+					<div class="reduced">
+						<p>
+							<img class="left" src="demo/img/concert_small.jpg" width="100" height="74" alt="concert"/>
+							Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim.
+							Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus.
+						</p>
+					</div>
+					<div class="expanded">
+						<p>
+							<img class="left" src="demo/img/concert.jpg" width="150" height="112" alt="concert"/>
+							Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim.
+							Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus.
+							Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet.
+							Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus.
+							Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum.
+							Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem.
+						</p>
+						<p>
+							Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+							Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+							Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
+							Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.
+							In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.
+							Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi.
+						</p>
+					</div>
+				</div>
+			</div>
+
+			<h2>Installation</h2>
+
+			<h3>Prepare HTML</h3>
+<pre title="Prepare the tags with classes"><code>&lt;div class="<b>expandable</b>"&gt;
+    &lt;div class="<b>reduced</b>"&gt;
+        &lt;a href="#" class="<b>expander</b>"&gt;more&lt;/a&gt;
+    &lt;/div&gt;
+    &lt;div class="<b>expanded</b>"&gt;
+        &lt;a href="#" class="<b>reducer</b>"&gt;less&lt;/a&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+
+			<h3>Plug into jQuery</h3>
+<pre title="Plug the expander into jQuery"><code>$(function() {
+    $('body').<b>expander()</b>;
+});
+</code></pre>
+
+			<h3>CSS (if JavaScript is deactivated)</h3>
+<pre title="Add some CSS for the visitors without JS"><code>.expander,
+.reducer,
+.reduced {
+    display: none;
+}</code></pre>
+
+			<h2>Manipulation</h2>
+			<p>All used selectors can be changed optional on first call.</p>
+			<dl class="options">
+				<dt><span>expandable</span></dt>
+					<dd>Is the identifier of one element that should be made expandable.</dd>
+				<dt><span>reducer</span></dt>
+					<dd>Is the identifier for the clickable element that hides the expanded element and shows the reduced element.</dd>
+				<dt><span>expander</span></dt>
+					<dd>Clickable element to show the expanded element and hide the reduced element.</dd>
+				<dt><span>reduced</span></dt>
+					<dd>Element containing content that should be shown while reduced.</dd>
+				<dt><span>expanded</span></dt>
+					<dd>Content will be shown if expander was clicked.</dd>
+			</dl>
+			
+			<h3>Example</h3>
+<pre title="Expample for manipulating the selectors"><code>$(function() {
+    $('body').expander(<b>{
+    	reduced: '.short',
+    	expanded: '.long'
+    }</b>);
+});
+</code></pre>
+		</div>
+
+		<script type="text/javascript" src="jquery-1.7.2.min.js"></script>
+		<script type="text/javascript" src="jquery.expander.js"></script>
+		<script type="text/javascript">
+			$(function() {
+				$('body').expander();
+			});
+		</script>
+	</body>
+</html>
