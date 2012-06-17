@@ -1,0 +1,87 @@
+.box {
+	
+}
+
+.box .box-title {
+	position: relative;
+}
+
+.box .box-title h3 {
+	border-bottom: 1px solid #ccc;
+	font-size: 110%;
+}
+
+.box .box-title .box-actions {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+}
+
+.box .box-title .box-actions li {
+	margin: 0 0 0 0.5em;
+	display: inline-block;
+}
+
+.box .box-title .box-actions a {
+	border: 1px solid #ccc;
+	border-bottom: none;
+	color: #333;
+	display: block;
+	font-size: 90%;
+	padding: 0.1em 0.5em 0.2em;
+	text-decoration: none;
+	text-align: center;
+}
+
+.box .box-title .box-actions a:hover {
+	background-color: #999;
+	color: #fff;
+	text-decoration: none;
+}
+
+.box .box-content p {
+	margin: 0.3em 0 1em;
+	line-height: 1.3em;
+}
+
+.box .box-content p img {
+	background-color: #FFFFFF;
+	border: 1px solid #CCCCCC;
+	margin: 5px;
+	padding: 5px;
+}
+
+.box .box-content p img.left {
+	margin: 5px 10px 5px 0;
+}
+
+.box .box-content p img.right {
+	margin: 5px 0 5px 10px;
+}
+
+.box .box-content p .expander,
+.box .box-content p .reducer {
+	border: 1px solid #ddd;
+	background-color: #ddd;
+	color: #666;
+	font-size: 70%;
+	padding: 0 0.3em;
+	text-decoration: none;
+	border-radius: 0.2em;
+	-moz-border-radius: 0.2em;
+	-webkit-border-radius: 0.2em;
+	-khtml-border-radius: 0.2em;
+}
+
+.box .box-content p .expander:hover,
+.box .box-content p .reducer:hover {
+	border: 1px solid #666;
+	background-color: #666;
+	color: #ddd;
+	text-decoration: none;
+}
+
+.box .box-title .box-actions .expander,
+.box .box-title .box-actions .reducer {
+	display: none;
+}
