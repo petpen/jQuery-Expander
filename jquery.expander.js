@@ -3,7 +3,7 @@
  * Copyright 2012 Peter Pensold
  * 
  * https://github.com/petpen/jQuery-Expander
- */
+ *  */
 (function($){
 	$.fn.expander = function(options) {
 		var defaults = {
